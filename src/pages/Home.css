@@ -1,0 +1,60 @@
+main {
+    flex: 1;
+}
+
+.hero {
+    background-color: #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.service {
+    background-color: #aaa;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service h2 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.service p {
+    color: #fff;
+    font-size: 1.0rem;
+}
+
+@media (max-width:800px) {
+    .services{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service{
+        height: 100px;
+        width: 80%;
+    }
+}
