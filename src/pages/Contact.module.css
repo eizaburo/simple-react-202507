@@ -1,8 +1,8 @@
-.contact {
+.main {
     flex: 1;
 }
 
-.contact .hero {
+.hero {
     background-color: #aaa;
     display: flex;
     flex-direction: column;
@@ -11,15 +11,15 @@
     height: 120px;
 }
 
-.contact .hero h1 {
+.hero h1 {
     color: #fff;
 }
 
-.contact .hero p {
+.hero p {
     color: #fff;
 }
 
-.contact .contact-form {
+.contactForm {
     display: flex;
     flex-direction: column;
     background-color: #eee;
@@ -29,27 +29,27 @@
     gap: 10px;
 }
 
-.contact .contact-form input,
+.contactForm input,
 textarea {
     padding: 8px;
 }
 
-.contact .contact-form button {
+.contactForm button {
     background-color: #333;
     color: #fff;
     padding: 10px;
     margin: 30px 0;
 }
 
-.contact .contact-form button:hover {
+.contactForm button:hover {
     background-color: #666;
 }
 
-.contact .contact-form button:active {
+.contactForm button:active {
     background-color: #999;
 }
 
-.contact .error-message {
+.errorMessage {
     color: #f00;
     font-size: 0.8rem;
 }

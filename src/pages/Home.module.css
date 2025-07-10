@@ -1,8 +1,8 @@
-.home {
+.main {
     flex: 1;
 }
 
-.home .hero {
+.hero {
     background-color: #aaa;
     display: flex;
     flex-direction: column;
@@ -11,22 +11,22 @@
     height: 200px;
 }
 
-.home .hero h1 {
+.hero h1 {
     color: #fff;
 }
 
-.home .hero p {
+.hero p {
     color: #fff;
 }
 
-.home .services {
+.services {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
     gap: 10px;
 }
 
-.home .service {
+.service {
     background-color: #aaa;
     width: 200px;
     height: 200px;
@@ -36,24 +36,24 @@
     justify-content: center;
 }
 
-.home .service h2 {
+.service h2 {
     color: #fff;
     font-size: 1.2rem;
 }
 
-.home .service p {
+.service p {
     color: #fff;
     font-size: 1.0rem;
 }
 
 @media (max-width:800px) {
-    .home .services {
+    .services {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    .home .service {
+    .service {
         height: 100px;
         width: 80%;
     }

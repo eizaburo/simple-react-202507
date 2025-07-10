@@ -1,7 +1,8 @@
 import React from "react";
-import './Home.css';
+// import './Home.css';
 
 import Hero from '../components/Hero';
+import styles from './Home.module.css'
 
 function Home() {
 
@@ -14,22 +15,22 @@ function Home() {
     }
 
     return (
-        <main className="home">
-            {/* <section className="hero">
+        <main className={styles.main}>
+            <section className={styles.hero}>
                 <h1>ヒーローエリアです</h1>
                 <p>ここはヒーローエリアのサブタイトルです</p>
-            </section> */}
-            <Hero params={homeHero} />
-            <section className="services">
-                <div className="service">
+            </section>
+            {/* <Hero params={homeHero} /> */}
+            <section className={styles.services}>
+                <div className={styles.service}>
                     <h2>サービスA</h2>
                     <p>サービスAの説明です</p>
                 </div>
-                <div className="service">
+                <div className={styles.service}>
                     <h2>サービスB</h2>
                     <p>サービスBの説明です</p>
                 </div>
-                <div className="service">
+                <div className={styles.service}>
                     <h2>サービスC</h2>
                     <p>サービスCの説明です</p>
                 </div>
