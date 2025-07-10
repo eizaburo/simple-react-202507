@@ -1,15 +1,25 @@
 import React from "react";
 import './Home.css';
-import './Contact'
-import Contact from "./Contact";
+
+import Hero from '../components/Hero';
 
 function Home() {
+
+    const homeHero = {
+        bgcolor: "#aaa",
+        color: "#fff",
+        height: "200px",
+        headline: "Homeのヒーローエリア",
+        caption: "Homeのヒーローエリアの説明文です。"
+    }
+
     return (
-        <main>
-            <section className="hero">
+        <main className="home">
+            {/* <section className="hero">
                 <h1>ヒーローエリアです</h1>
                 <p>ここはヒーローエリアのサブタイトルです</p>
-            </section>
+            </section> */}
+            <Hero params={homeHero} />
             <section className="services">
                 <div className="service">
                     <h2>サービスA</h2>

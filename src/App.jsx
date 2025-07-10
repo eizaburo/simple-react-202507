@@ -15,7 +15,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        <Footer />
+        <Footer backgroundColor="#00f" />
       </BrowserRouter>
     </>
   )

@@ -2,6 +2,7 @@ import React from "react";
 import './Contact.css';
 
 import { useForm } from 'react-hook-form';
+import Hero from '../components/Hero';
 
 function Contact() {
 
@@ -36,29 +37,38 @@ function Contact() {
 
     }
 
+    const contactHero = {
+        bgcolor: "#aaa",
+        color: "#fff",
+        height: "120px",
+        headline: "お問合せフォーム",
+        caption: "お気軽にお問合せください。"
+    }
+
     return (
-        <main>
-            <section className="hero">
+        <main className="contact">
+            {/* <section className="hero" >
                 <h1>お問合せフォーム</h1>
                 <p>お気軽にお問合せください。</p>
-            </section>
+            </section> */}
+            <Hero params={contactHero} />
             <section>
                 <form className="contact-form" onSubmit={handleSubmit(_onSubmit)}>
 
-                    <label for="title">お問合せタイトル</label>
+                    <label htmlFor="title">お問合せタイトル</label>
                     <input type="text" id="title" {...register("title", {
                         required: "タイトルは必須です。"
                     })} />
                     {errors.title && <p className="error-message">{errors.title.message}</p>}
 
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="email" id="email" {...register("email", {
                         required: "Emailは必須です。",
                         pattern: { value: /^[^@\s]+@[^@\s]+\.[^@\s]+$/, message: "Emailを正しく入力してください。" }
                     })} />
                     {errors.email && <p className="error-message">{errors.email.message}</p>}
 
-                    <label for="message">お問合せ内容</label>
+                    <label htmlFor="message">お問合せ内容</label>
                     <textarea id="message" rows={5} {...register("message", {
                         required: "お問合せ内容は必須です。",
                         maxLength: { value: 10, message: "10文字以下で入力してください。" }

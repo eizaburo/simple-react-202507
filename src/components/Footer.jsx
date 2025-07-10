@@ -1,9 +1,9 @@
 import React from "react";
 import './Footer.css';
 
-function Footer() {
+function Footer({ backgroundColor = "#000" }) {
     return (
-        <footer>
+        <footer style={{ backgroundColor }}>
             footer
         </footer>
     );

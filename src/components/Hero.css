@@ -1,0 +1,14 @@
+.dynamicHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamicHero h1 {
+    font-size: 1.5rem;
+}
+
+.dynamicHero p {
+    font-size: 1.0rem;
+}
