@@ -14,7 +14,7 @@ function Contact() {
 
     const _onSubmit = data => {
 
-        const url = "https://script.google.com/macros/s/AKfycbyzNZmAv5bxnw-_MF_tZ91q8uxs3AT_Uz0Qomf56EyYyLq9Qr7mFjmLPiZM4HpsWjDv/exec";
+        const url = "https://path/to/api";
 
         fetch(url, {
             method: "POST",
